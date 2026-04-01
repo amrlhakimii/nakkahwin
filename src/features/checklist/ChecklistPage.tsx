@@ -53,12 +53,12 @@ export function ChecklistPage() {
           {tasks.length === 0 && (
             <Button variant="outline" size="sm" onClick={handleLoadTemplate}>
               <RotateCcw size={14} />
-              Muat Template
+              <span className="hidden sm:inline">Muat Template</span>
             </Button>
           )}
           <Button size="sm" onClick={() => setShowAdd(true)}>
             <Plus size={14} />
-            Tambah Tugasan
+            <span className="hidden sm:inline">Tambah Tugasan</span>
           </Button>
         </div>
       }

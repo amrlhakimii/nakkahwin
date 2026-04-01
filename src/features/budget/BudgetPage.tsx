@@ -35,11 +35,11 @@ export function BudgetPage() {
         <div className="flex gap-2">
           <Button variant="outline" size="sm" onClick={() => { setBudgetInput(budget.totalBudget.toString()); setShowBudgetModal(true); }}>
             <Settings size={14} />
-            Tetapkan Bajet
+            <span className="hidden sm:inline">Tetapkan Bajet</span>
           </Button>
           <Button size="sm" onClick={() => setShowAdd(true)}>
             <Plus size={14} />
-            Tambah Rekod
+            <span className="hidden sm:inline">Tambah Rekod</span>
           </Button>
         </div>
       }
